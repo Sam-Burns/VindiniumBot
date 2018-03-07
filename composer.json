@@ -1,0 +1,13 @@
+{
+    "require": {
+        "behat/behat": "^3.4",
+        "phpspec/phpspec": "^4.3",
+        "symfony/console": "^4.0",
+        "ultra-lite/container": "^6.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}
