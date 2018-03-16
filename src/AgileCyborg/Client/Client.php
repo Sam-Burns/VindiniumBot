@@ -1,6 +1,7 @@
 <?php
 namespace AgileCyborg\Client;
 
+use AgileCyborg\Bot\Bot;
 use AgileCyborg\Bot\RandomBot;
 
 class Client
@@ -44,7 +45,7 @@ class Client
         }
     }
 
-    private function start($botObject)
+    private function start(Bot $botObject)
     {
         // Starts a game with all the required parameters
         if ($this->mode == 'arena') {
@@ -92,7 +93,7 @@ class Client
         }
     }
 
-    private function move($url, $direction)
+    private function move(string $url, string $direction)
     {
         /*
          * Send a move to the server
@@ -113,7 +114,7 @@ class Client
         }
     }
 
-    private function isFinished($state)
+    private function isFinished($state) : bool
     {
         return $state['game']['finished'];
     }

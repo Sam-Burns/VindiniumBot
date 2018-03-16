@@ -2,6 +2,7 @@
 
 namespace AgileCyborg\Bot;
 
-class Bot
+interface Bot
 {
+    public function move($state) : string;
 }
