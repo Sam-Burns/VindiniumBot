@@ -1,0 +1,22 @@
+{
+    "name": "samburns/agilecyborg",
+
+    "type": "application",
+
+    "description": "Vindinium bot",
+
+    "require": {
+        "symfony/console": "^4.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+
+    "require-dev": {
+        "phpspec/phpspec": "^4.3"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "AgileCyborg\\": "src/AgileCyborg"
+        }
+    }
+}

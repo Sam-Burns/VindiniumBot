@@ -1,4 +1,7 @@
 <?php
+namespace AgileCyborg\Client;
+
+use AgileCyborg\Bot\RandomBot;
 
 class Client
 {
@@ -35,9 +38,6 @@ class Client
 
     public function load()
     {
-        require('./Bot.php');
-        require('./HttpPost.php');
-
         for ($i = 0; $i <= ($this->numberOfGames - 1); $i++) {
             $this->start(new RandomBot());
             echo "\nGame finished: " . ($i + 1) . "/" . $this->numberOfGames . "\n";
